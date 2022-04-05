@@ -5,7 +5,6 @@
     width: 100%;
     margin: auto;
     overflow: hidden;
-    line-height: 60px;
     margin: 0;
     display: inline-flex;
 }
@@ -15,26 +14,68 @@
     text-decoration: none;
 }
 .header-menu-link{
-    margin-right: 10%;
+    border: none;
+    background: none;
+    height: 30px;
+    margin: 8px;
+    font-size: 20px;
+    padding: 8px;
 }
 .header-tutorials-links ul {
     display: inline-flex;
+    padding: 16px 0;
 }
 .header-tutorials-links a {
     padding: 0;
 }
 .header-tutorials-links {
+    margin-left: 10%;
     margin-right: 8%;
 }
 .header-tutorials-links li {
     padding-right: 10px;
 }
-.header-search {
+
+.header-search-container {
     margin-right: 10%;
 }
-.header-search input {
+.header-search {
     min-width: 250px;
+    border: none;
+    margin: 0;
+    padding: 7px 10px;
+    border-radius: inherit;
 }
+.header-search-form {
+    display: flex;
+    padding: 2px;
+    background-color: white;
+    border-radius: 18px;
+    margin: 8px 0;
+}
+.header-search-form button {
+    background: none;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    color: gray;
+}
+
+.header-login, .header-sign-up {
+    height: fit-content;
+    padding: 9px 0;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+.header .header-login {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.header .header-sign-up {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
 .button {
     background-color: white;
     color: #000000;
