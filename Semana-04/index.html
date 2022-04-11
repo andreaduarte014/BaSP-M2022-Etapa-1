@@ -11,7 +11,10 @@
     <link rel="icon" type="image/x-icon" href="https://cdn.worldvectorlogo.com/logos/tether.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/aside.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 </head>
 
 <body>
@@ -29,19 +32,23 @@
                 <input class="header-search" placeholder="Search">
                 <button><i class="fa fa-search"></i></button>
             </form>
-        </div>     
-        <button class="button header-login">Login</button>
-        <button class="button header-sign-up">SignUp</button>
+        </div> 
+        <div class="login-signup-buttons">
+            <button class="button header-login">Login</button>
+            <button class="button header-sign-up">SignUp</button>
+        </div>    
     </header>
-    <main>
+    <main class="main">
         <div class="main-right">
             <div class="title">
-                <img src="https://cdn.worldvectorlogo.com/logos/tether.svg" alt="logo" style="width:62.5px;height:75px;">
-                <div class="name">
-                    <h1>TRACKGENIX</h1>
-                    <h2>DATA MANAGEMENT</h2> 
+                <div class="logo-and-title">
+                    <img class="logo-trackgenix" src="https://cdn.worldvectorlogo.com/logos/tether.svg" alt="logo">
+                    <div class="name">
+                        <h1>TRACKGENIX</h1>
+                        <h2>DATA MANAGEMENT</h2> 
+                    </div>
                 </div>
-                <div>
+                <div class="imagen-texto-principal">
                     <img src="https://pazarlamaturkiye.com/wp-content/uploads/2018/05/Data-Management-Platform.png" alt="computer-ilustration">
                     <p>
                         Presentation of the company : A nice message about us that you find very attractive, friendly,that
@@ -51,46 +58,48 @@
                     </p>
                 </div>
             </div>
-            <div class="middle-figure">
-                <figure class="figure">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjlcnhnQTV7An7oXIe1HgO9FP3tfNX5EGj26M8OlEeyMVDk7GV3P38-vk_10spTiU4P0&usqp=CAU" alt="simplicity">
-                    <figcaption class="figcaption">Simplicity</figcaption>
-                </figure>
-                <figure class="figure">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX2oFaMgZKemCsI4JQpP0Ci6xnxByif6hU6y6-peVJWTiiFJ_62dN5f6Og_A-XDs0eFA&usqp=CAU" alt="efficiency">
-                    <figcaption class="figcaption">Efficiency</figcaption>
-                </figure>
-                <figure class="figure">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBABTulSaXadjzHNPzKu6OuQp5g4y77EBCzYpdjZ-4TdGt06MWhV-HeqVAdFVnvf1gBVw&usqp=CAU" alt="trackig">
-                    <figcaption class="figcaption">Tracking</figcaption>
-                </figure>
-                <figure class="figure">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4eO2rmCp1zheX2tdHtABQGSe2A0lK6OpbT_vIJUIr_GCQR_GhEQOy56whal0501XbXc&usqp=CAU" alt="confidence">
-                    <figcaption class="figcaption">Confidence</figcaption>
-                </figure>
-                <figure class="figure">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbEOR29j9IHs92B5cQX1gqvI-0jGED6jDcdDVewpE3LbPR_YmRjpJWbRWKyFTEcCRvYMY&usqp=CAU" alt="management">
-                    <figcaption class="figcaption">Management</figcaption>
-                </figure>
-            </div>
-            <div class="lists">
-                <div class="column">
-                    <h2>Why choose Trackgenix is a quality leap?</h2>
-                    <ul>
-                        <li>Increase productivity</li>
-                        <li>Optimize leadership and team management</li>
-                        <li>Facilitate work traceability</li>
-                        <li>Improve decision making</li>
-                    </ul>            
+            <div class="main-container-tablet">
+                <div class="middle-figure">
+                    <figure class="figure">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjlcnhnQTV7An7oXIe1HgO9FP3tfNX5EGj26M8OlEeyMVDk7GV3P38-vk_10spTiU4P0&usqp=CAU" alt="simplicity">
+                        <figcaption class="figcaption">Simplicity</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX2oFaMgZKemCsI4JQpP0Ci6xnxByif6hU6y6-peVJWTiiFJ_62dN5f6Og_A-XDs0eFA&usqp=CAU" alt="efficiency">
+                        <figcaption class="figcaption">Efficiency</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBABTulSaXadjzHNPzKu6OuQp5g4y77EBCzYpdjZ-4TdGt06MWhV-HeqVAdFVnvf1gBVw&usqp=CAU" alt="trackig">
+                        <figcaption class="figcaption">Tracking</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4eO2rmCp1zheX2tdHtABQGSe2A0lK6OpbT_vIJUIr_GCQR_GhEQOy56whal0501XbXc&usqp=CAU" alt="confidence">
+                        <figcaption class="figcaption">Confidence</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbEOR29j9IHs92B5cQX1gqvI-0jGED6jDcdDVewpE3LbPR_YmRjpJWbRWKyFTEcCRvYMY&usqp=CAU" alt="management">
+                        <figcaption class="figcaption">Management</figcaption>
+                    </figure>
                 </div>
-                <div class="column">
-                    <h2>What can Trackgenic do for you?</h2>
-                    <ul>
-                        <li>Time registration</li>
-                        <li>Reports</li>
-                        <li>Resource management</li>
-                        <li>Assign multiple roles</li>
-                    </ul>            
+                <div class="lists">
+                    <div class="column">
+                        <h2>Why choose Trackgenix is a quality leap?</h2>
+                        <ul>
+                            <li>Increase productivity</li>
+                            <li>Optimize leadership and team management</li>
+                            <li>Facilitate work traceability</li>
+                            <li>Improve decision making</li>
+                        </ul>            
+                    </div>
+                    <div class="column">
+                        <h2>What can Trackgenic do for you?</h2>
+                        <ul>
+                            <li>Time registration</li>
+                            <li>Reports</li>
+                            <li>Resource management</li>
+                            <li>Assign multiple roles</li>
+                        </ul>            
+                    </div>
                 </div>
             </div>
             <div class="about">
@@ -150,8 +159,8 @@
                     <li><a href="#form">Contact Form</a></li>
                     <li><a href="#sources">Sources</a></li>
                 </ul>
-                <h2 id="contact">Contact Us</h2>
-                <p id="contact-p">
+                <h2 class="contact">Contact Us</h2>
+                <p class="contact-p">
                     Sed varius enim lorem
                     ullamcorper dolore aliquam
                     aenean ornare velit lactus, ac
@@ -160,7 +169,7 @@
                     ante interdum. Sed nulla amet
                     lorem feugiat tempus aliquam
                 </p>
-                <p id="information">
+                <p class="information">
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                     <a href="trackgenix@info.com">trackgenix@info.com</a>
                     <i class="fa fa-home" aria-hidden="true">1234 Somewhere Road #8254 Nashville, TN 00-000</i>     
