@@ -107,9 +107,16 @@ body {
     .header-search {
         display: none;
     }
+    .header-search-form button {
+        background: none;
+        width: 40px;
+        border: none;
+        cursor: pointer;
+        color: gray;
+    }
 }
 @media screen and (max-width: 768px) {
-    .header-tutorials-links li :nth-child(1){
+    .header-tutorials-links ul :nth-child(1){
         display: none;
     }
 }
