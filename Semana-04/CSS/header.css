@@ -96,7 +96,7 @@ body {
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 1024px){
 
     .header-tutorials-links {
         display: none;
@@ -115,8 +115,4 @@ body {
         color: gray;
     }
 }
-@media screen and (max-width: 768px) {
-    .header-tutorials-links ul :nth-child(1){
-        display: none;
-    }
-}
+
