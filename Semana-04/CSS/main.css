@@ -51,7 +51,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
+    width: 95%;
 }
 .figure {
     display: flex;
@@ -85,7 +85,6 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-top: 60px;
 }
 .lists h2 {
@@ -261,8 +260,7 @@ form .submit{
         text-align: center;
     }
     .logo-and-title {
-        justify-content: center;
-        margin-left: 18%;
+        font-size: 30px;
     }
     .imagen-texto-principal {
         display: flex;
@@ -275,9 +273,10 @@ form .submit{
     .lists {
         margin-top: 0%;
         flex-direction: column-reverse;
+        align-items: center;
     }
     .lists h2 {
-        font-size: xx-large;
+        font-size: 31px;
         width: max-content;
     }
     .column ul {
@@ -302,48 +301,25 @@ form .submit{
         flex-direction: column;
         align-items: center;
     }
-    .middle-figure {
-        margin-bottom: 20px;
-        width: auto;
-    }
     .figure {
         margin-bottom: 30px;
-        margin-right: 60px;
+        margin-right: 51px;
+    }
+    figure.figure:nth-child(5) {
+        margin-left: 35%;
     }
 }
 @media screen and (max-width: 1024px) {
-    .main-right {
-        margin:auto;
-        padding: 0%;
-    }
-    .form-container {
-        display: none;
-    }
-    .main-container-tablet {
-        display: flex;
-        margin: 0px 80px;
-    }
-    .middle-figure {
-        width: 565px;
-    }
-    .middle-figure figure img {
-        width: 109px;
-        height: 90px;
-    }
-    .figcaption {
-        width: 108px;
-    }
-    .lists {
-        margin-left: 10px;
-        margin-right: 0px;
-    }
-    .logo-and-title {
-        justify-content: flex-start;
-        font-size: 26px;
-    }
-    .logo-trackgenix {
-        margin-right: 3%;
-    }
+  .main-right {
+      width: fit-content;
+      padding: 0% 10%;
+  }
+  .header-tutorials-links li {
+    padding-right: 4px;
+  }
+  .form-container {
+      display: none;
+  }
 }
 @media screen and (min-width: 1024px) {
     .main-container-tablet {

@@ -75,10 +75,13 @@ body {
 .header .header-login {
     padding-right: 30px;
     padding-left: 30px;
+    margin: auto;
 }
 .header .header-sign-up {
     padding-right: 30px;
     padding-left: 30px;
+    margin: auto;
+    margin-left: 20px;
 }
 .button {
     padding-right: 20px;
@@ -95,24 +98,24 @@ body {
     display: flex;
 }
 
-
-@media screen and (max-width: 1024px){
-
+@media screen and (max-width: 768px){
     .header-tutorials-links {
         display: none;
     }
-    .header-search-container {
-        display: none;
+    .header-search-form button{
+        display: flex;
+        width: 0px;
+        color: #000000;
+        font-size: 27px;
     }
     .header-search {
         display: none;
     }
-    .header-search-form button {
-        background: none;
-        width: 40px;
-        border: none;
-        cursor: pointer;
-        color: gray;
+    .fa-search::before {
+        margin-left: 500px;
+    }
+    .login-signup-buttons {
+        margin-right: 230px;
     }
 }
 
