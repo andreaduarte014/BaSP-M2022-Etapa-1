@@ -9,7 +9,7 @@ i=0;
 let newDrinks=[];
 for (i in drinks){
     newDrinks.push(drinks[i].charAt(0).toUpperCase()+drinks[i].slice(1));
-    //alert(newDrinks[i]);
+    alert(newDrinks[i]);
 }
 /*5c- make a sentance containing all the names of the array in par 5a and show it in an alert */
 var sentence=' ';
