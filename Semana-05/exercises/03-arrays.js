@@ -1,6 +1,6 @@
 /* 3a-show in console the 5th an 11th month of the year */
-let months=['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 
-'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+let months=['Jenuary', 'Februrary', 'March', 'April', 'May', 'June', 'July', 'August', 
+'September', 'October', 'November', 'December'];
 console.log('the fifth month of the year is:' + months[4]);
 console.log('the eleventh month of the year is:' + months[10]);
 /* 3b-Order the previous array in alphabetical order */
@@ -20,6 +20,6 @@ console.log('months of the year in reverse:' + months);
 /*3f- unify the array in a string where each month is separated with "-" */
 console.log('string with the months of the year:' + (months).join('-'));
 /* create a copy of the array only with the months from May to November */
-let months2=['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 
-'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-console.log('from May to November array:' + );
+let months2=['Jenuary', 'Februrary', 'March', 'April', 'May', 'June', 'July', 'August', 
+'September', 'October', 'November', 'December'];
+console.log('from May to November array:' + months2.slice(4,11));
