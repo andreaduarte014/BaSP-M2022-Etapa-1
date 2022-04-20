@@ -5,14 +5,14 @@
     display: flex;
     justify-content: space-around;
     background-color: #50A780;
-    color:white;
+    color: #fff;
     font-size: small;
     font-weight: normal;
     line-height: 1.8em;
     padding: 18px;
 }
 .horizontal-bottom-lists h2 {
-    color:black ;
+    color: #000 ;
     font-weight: bold;
 }
 .col-container { 
@@ -20,14 +20,13 @@
     margin-right: 20px;
 }
 .col {
-    margin-right: 60px;
-    margin-left: 55px;
+    margin: 0px 60px 0px 55px;
 }
 .footer {
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin:auto ;
+    margin: auto;
     box-sizing: border-box; 
 }
 .social-network {
@@ -37,8 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 5px;
-    padding-top: 30px;
+    padding: 30px 0px 5px 0px;
 }
 @media screen and (max-width: 1024px) {
     .horizontal-bottom-lists {

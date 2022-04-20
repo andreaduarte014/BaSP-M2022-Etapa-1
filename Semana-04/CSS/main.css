@@ -29,17 +29,14 @@ body {
 .logo-and-title {
     display: flex;
     justify-content: center;
-    padding-top: 3%;
     align-items: center;
     font-size: xx-large;
     margin-top: 4%;
+    padding-top: 3%;
 }
 .imagen-texto-principal {
     display: flex;
-    justify-content: space-between;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin: 20px 0px 25px 0px;
 }
 .imagen-texto-principal p {
     padding: 3%;
@@ -49,7 +46,6 @@ body {
 }
 .middle-figure {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 95%;
 }
@@ -62,38 +58,34 @@ body {
     margin-top: 25px;
 }
 .middle-figure figure img {
-    flex-wrap: wrap;
     width: 130px;
     height: 100px;
     box-sizing: border-box;
     border: 1px solid gray;
-    box-shadow: 0px 3px 12px 0px #000000 ;
+    box-shadow: 0px 3px 12px 0px #000000;
 }
 .figcaption {
     width: 130px;
-    margin: 0;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    background-color: lightgray;
+    padding: 2% 0%;
+    background-color: #d3d3d3;
     font-weight: bold;
     box-shadow: 0px 3px 12px 0px #000000;
     text-align: center;   
 }
 .lists {
     display: flex;
-    width: 80%;
+    width: 90%;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     margin-top: 60px;
 }
 .lists h2 {
-    font-size: large;
+    font-size: 28px;
     font-weight: bold;
 }
 .lists li {
-    margin: 0;
-    font-size: small;
+    font-size: 20px;
     font-weight: normal;
     line-height: 1.8em;
 }
@@ -103,40 +95,31 @@ body {
    margin: 2%;
 }
 .column ul {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0px 30px;
 }
 .column li:before{content: "-"}
 .about {
     display: flex;
     flex-direction: column;
-    margin: 40px;
-    padding: 0px;
-    background-color: lightgray;
+    background-color: #d3d3d3;
     border-radius: 15px;
     box-shadow: 0px 3px 12px 0px #000000;
 }
 #us {
-    padding: 6px;
-    font-size: large;
+    padding: 10px;
+    font-size: 28px;
     font-weight: bold;
 }
 .about h3 {
     padding: 10px;
-    font-size: medium;
 }
 .about p {
     display: flex;
-    flex-direction: row;
-    margin: 0; 
     padding: 10px;
-    font-size: small;
-    font-weight: normal;
     line-height: 1.4em;
 }
 .about img {
     display: flex;
-    flex-direction: row;
     width: 29%;
     vertical-align: top;
 }
@@ -144,7 +127,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 2%;
-    padding-bottom:0% ;
+    padding-bottom: 0%;
 }
 .about-top img {
     width: 35%;
@@ -163,32 +146,28 @@ body {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin-right: 10%;
     padding: 20px;
-    padding-left: 10%;
-    color:#373867 ;
+    color: #373867;
     font-weight: bold;
-
 }
 .form-container h2 {
     width: 95%;
-    margin-bottom: 4%;
-    margin-top: 15%;
-    border-bottom: 1px solid black;
+    margin: 15% 0% 4% 0%;
+    border-bottom: 1px solid #000000;
     border-style: solid;
-    border-color: #7B61FF ;
+    border-color: #7B61FF;
     font-size: x-large;
     line-height: 40px;
 }
 .form label {
-    display:flex ;
+    display: flex;
     flex-direction: column;
     padding: 10px;
-    line-height: 1.8em ;
+    line-height: 1.8em;
 }
 .form input[type="textarea"] {
     width: 100%;
-    padding: 8px ;    
+    padding: 8px;    
 }
 form {
     display: flex;
@@ -196,9 +175,8 @@ form {
     line-height: 30px;
 }
 form input {
-    width: 95%;
-    margin: 0%;
-    padding-bottom:5%;
+    width: -webkit-fill-available;
+    padding-bottom: 5%;
     border-color: #7B61FF;
     border-width: 0.5px;   
 }
@@ -207,13 +185,12 @@ form textarea {
     margin-top: 5px;
     padding-bottom: 10%;
     height: 100px;
-    color:#7B61FF;
+    color: #7B61FF;
     border-color: #7B61FF;
     border-width: 0.5px;
 }
 form select {
-    width: 97%;
-    margin: 0%;
+    width: -webkit-fill-available;
     padding-bottom: 2%;
     border-color: #7B61FF;
     border-width: 0.5px;  
@@ -242,7 +219,6 @@ form .submit{
     display: flex;
     flex-direction: row-reverse;
 }
-
 @media screen and (max-width: 768px){
     .logo-trackgenix {
         width: 94px;
@@ -270,8 +246,10 @@ form .submit{
     .imagen-texto-principal img {
         width: 95%;
     }
+    .middle-figure {
+        margin-left: 30%;
+    }
     .lists {
-        margin-top: 0%;
         flex-direction: column-reverse;
         align-items: center;
     }
@@ -302,11 +280,10 @@ form .submit{
         align-items: center;
     }
     .figure {
-        margin-bottom: 30px;
-        margin-right: 51px;
+        margin: 0px 51px 30px 0px;
     }
     figure.figure:nth-child(5) {
-        margin-left: 35%;
+        margin-left: 20%;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -330,6 +307,7 @@ form .submit{
     }
     .lists {
         flex-direction: row-reverse;
+        flex-wrap: nowrap;
     }
     .logo-and-title {
         align-self: flex-start;
@@ -343,11 +321,9 @@ form .submit{
     .logo-trackgenix {
         width: 87px;
         height: 65px;
-        margin-right: 10px;
-        margin-left: 10px;
+        margin: 0px 10px;
     }
     .about {
-        margin: 10%;
-        margin-bottom: 2%;
+        margin: 10% 10% 2% 10%;
     }
 }
