@@ -1,5 +1,6 @@
 // signup name and surname validation
-function nameBlur(name,className){
+window.onload = function(){
+function nameBlur(name,className) {
     var namee=document.getElementsByName(name)[0].value;
     var i=0;
     var j=0;
@@ -18,11 +19,11 @@ function nameBlur(name,className){
         document.getElementsByClassName(className)[0].style.visibility="visible";
     }
 }
-function nameFocus(className){
+function nameFocus(className) {
     document.getElementsByClassName(className)[0].style.visibility="hidden";
 }
 //signup dni
-function dniBlur(){
+function dniBlur() {
     var dni=document.getElementsByName('dni')[0].value;
     var i=0;
     var j=0;
@@ -41,11 +42,11 @@ function dniBlur(){
         document.getElementsByClassName('signup-dni-error')[0].style.visibility="visible";
     }
 }
-function dniFocus(){
+function dniFocus() {
     document.getElementsByClassName('signup-dni-error')[0].style.visibility="hidden";
 }
 // signup date of birth validation
-function dateBlur(){
+function dateBlur() {
     var day= new Date()
     var date=document.getElementsByName('birth')[0].value;
     if (day < new Date(date)){
@@ -54,11 +55,11 @@ function dateBlur(){
         return true
     }
 }
-function dateFocus(){
+function dateFocus() {
     document.getElementsByClassName('signup-date-error')[0].style.visibility="hidden";
 }
 //signup telephone validation
-function telBlur(){
+function telBlur() {
     var telephone=document.getElementsByName('telephone')[0].value;
     var i=0;
     var j=0;
@@ -77,22 +78,48 @@ function telBlur(){
         document.getElementsByClassName('signup-telephone-error')[0].style.visibility="visible";
     }
 }
-function telFocus(){
+function telFocus() {
     document.getElementsByClassName('signup-telephone-error')[0].style.visibility="hidden"
 }
-// signup adress validation
-
-
-
-
-
-
-
+// signup adress validation 
+//Al menos 5 caracteres con letras, números y un espacio en el medio.
+function adressBlur() {
+    var adress=document.getElementsByName('adress')[0].value;
+    var hasLetters = false;
+    var hasNumbers = false;
+    var i = 0;
+    while (i < adress.length && (!hasLetters || !hasNumbers)) {
+    if (adress[i].match(/[a-z]/i)) {
+    hasLetters = true;
+    } else if (city[i] >= '0' && city[i] <= '9') {
+    hasNumbers = true;
+    }
+    i++;
+    }
+    if (!(hasLetters && hasNumbers)){
+        document.getElementsByClassName("signup-adress-error")[0].style.visibility = "visible";  
+    } else {
+        document.getElementsByClassName("signup-adress-error")[0].style.visibility = "hidden";
+    }
+}
+function adressFocus() {
+    document.getElementsByClassName("signup-adress-error")[0].style.visibility = "hidden"; 
+}
 
 
 
 // signup city validation
-function cityBlur(){
+function countLetters(string) {
+    var letters = 0;
+    for (var i = 0; i < string.length; i++) {
+      var element = string[i];
+      if (isNaN(element)) {
+        letters++;
+      }
+    }
+    return letters;
+  }
+function cityBlur() {
     var city=document.getElementsByName('city')[0].value;
     var hasLetters = false;
     var hasNumbers = false;
@@ -105,8 +132,8 @@ function cityBlur(){
     }
     i++;
     }
-    if (!(hasLetters || hasNumbers) && hasLetters < 3) {
-    document.getElementsByClassName("signup-city-error")[0].style.visibility = "visible";
+    if (!(hasLetters || hasNumbers)){
+        document.getElementsByClassName("signup-city-error")[0].style.visibility = "visible";
     } else {
     return true;
     }
@@ -115,7 +142,7 @@ function cityFocus () {
     document.getElementsByClassName("signup-city-error")[0].style.visibility = "hidden";
 }
 // signup postal code validation
-function codeBlur(){
+function codeBlur() {
     var code=document.getElementsByName('postal code')[0].value;
     var i=0;
     var j=0;
@@ -134,7 +161,7 @@ function codeBlur(){
         document.getElementsByClassName('signup-code-error')[0].style.visibility="visible";
     }
 }
-function codeFocus(){
+function codeFocus() {
     document.getElementsByClassName('signup-code-error')[0].style.visibility="hidden";
 }
 //signup email validation
@@ -182,6 +209,7 @@ function confirmationBlur(){
         document.getElementsByClassName("signup-confirmation-error")[0].style.visibility = "visible";
     }
 }
-function confirmationFocus(){
+function confirmationFocus() {
     document.getElementsByClassName("signup-confirmation-error")[0].style.visibility = "hidden";  
+}
 }
