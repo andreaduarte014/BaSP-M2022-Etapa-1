@@ -1,0 +1,329 @@
+* {
+    margin: auto;
+    padding: auto;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    width: fit-content;
+}
+.logo-trackgenix {
+    width: 60px;
+    height: 60px;
+}
+.main {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.main-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    padding: 0% 4%;
+}
+.logo-and-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    margin-top: 4%;
+    padding-top: 3%;
+}
+.imagen-texto-principal {
+    display: flex;
+    margin: 20px 0px 25px 0px;
+}
+.imagen-texto-principal p {
+    padding: 3%;
+}
+.imagen-texto-principal img {
+    width: 60%;
+}
+.middle-figure {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+}
+.figure {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 170px;
+    margin:auto; 
+    margin-top: 25px;
+}
+.middle-figure figure img {
+    width: 130px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid #808080;
+    box-shadow: 0px 3px 12px 0px #000000;
+}
+.figcaption {
+    width: 130px;
+    padding: 2% 0%;
+    background-color: #d3d3d3;
+    font-weight: bold;
+    box-shadow: 0px 3px 12px 0px #000000;
+    text-align: center;   
+}
+.lists {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+}
+.lists h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+.lists li {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.8em;
+}
+.column {
+   display: flex;
+   flex-direction: column;
+   margin: 2%;
+}
+.column ul {
+    margin: 30px 0px 30px;
+}
+.column li:before{content: "-"}
+.about {
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d3d3;
+    border-radius: 15px;
+    box-shadow: 0px 3px 12px 0px #000000;
+}
+#us {
+    padding: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.about h3 {
+    padding: 10px;
+}
+.about p {
+    display: flex;
+    padding: 10px;
+    line-height: 1.4em;
+}
+.about img {
+    display: flex;
+    width: 29%;
+    vertical-align: top;
+}
+.about-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    padding-bottom: 0%;
+}
+.about-top img {
+    width: 35%;
+    vertical-align: top;
+}
+.about-bottom {
+    display: flex;
+    margin-top: 15px;
+    padding: 2%;
+    padding-top: 0%;
+}
+.about-bottom img {
+    width: 261px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+    color: #373867;
+    font-weight: bold;
+}
+.form-container h2 {
+    width: auto;
+    margin: 15% 0% 4% 0%;
+    border-bottom: 1px solid #000000;
+    border-style: solid;
+    border-color: #7B61FF;
+    font-size: x-large;
+    line-height: 40px;
+}
+.form label {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    line-height: 1.8em;
+}
+.form input[type="textarea"] {
+    width: 100%;
+    padding: 8px;    
+}
+form {
+    display: flex;
+    margin-bottom: 70px;
+    line-height: 30px;
+}
+form input {
+    width: -webkit-fill-available;
+    padding-bottom: 5%;
+    border-color: #7B61FF;
+    border-width: 0.5px;   
+}
+form textarea {
+    width: 95%;
+    margin: 10px 0px 10px 10px;
+    padding-bottom: 10%;
+    height: 100px;
+    color: #7B61FF;
+    border-color: #7B61FF;
+    border-width: 0.5px;
+}
+form select {
+    width: -webkit-fill-available;
+    padding-bottom: 2%;
+    border-color: #7B61FF;
+    border-width: 0.5px;  
+}
+form .submit{
+    width: 75%;
+    margin-left: 10%;
+    padding: 5px;
+    background-color: #aace9b;
+    border: none;
+    border-radius: 5px;
+}
+.form-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.form-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.main-container-tablet {
+    display: flex;
+    flex-direction: row-reverse;
+}
+@media screen and (max-width: 768px){
+    .logo-trackgenix {
+        width: 94px;
+        height: 94px;
+    }
+    .name h1 {
+        font-size: 200%;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+    .name h2 {
+        font-size: 100%;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+    .logo-and-title {
+        font-size: 30px;
+    }
+    .imagen-texto-principal {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 6%;
+    }
+    .imagen-texto-principal img {
+        width: 95%;
+    }
+    .middle-figure {
+        margin-left: 30%;
+    }
+    .lists {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .lists h2 {
+        font-size: 31px;
+        width: max-content;
+    }
+    .column ul {
+        text-align: center;
+        font-size: large;
+    }
+    .column li {
+        text-align: center;
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .horizontal-bottom-lists {
+        margin-top: 170px;
+    }
+    .form-container {
+        display: none;
+    }
+    .main-right {
+        width: 95%;
+    }
+    .main-container-tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+    .figure {
+        margin: 0px 51px 30px 0px;
+    }
+    figure.figure:nth-child(5) {
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 1024px) {
+  .main-right {
+      width: fit-content;
+      padding: 0% 10%;
+  }
+  .header-tutorials-links li {
+    padding-right: 4px;
+  }
+  .form-container {
+      display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+    .main-container-tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 110%;
+    }
+    .lists {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+    .logo-and-title {
+        align-self: flex-start;
+        justify-content: flex-start;
+        font-size: x-large;
+    }
+    .imagen-texto-principal img {
+        max-width: 500px;
+        margin-left: 85px;
+    }
+    .logo-trackgenix {
+        width: 87px;
+        height: 65px;
+        margin: 0px 10px;
+    }
+    .about {
+        margin: 10% 10% 2% 10%;
+    }
+}

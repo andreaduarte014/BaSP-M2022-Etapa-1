@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRACKGENICS LANDING</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://cdn.worldvectorlogo.com/logos/tether.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Styles/reset.css">
+    <link rel="stylesheet" href="../Styles/header.css">
+    <link rel="stylesheet" href="../Styles/footer.css">
+    <link rel="stylesheet" href="../Styles/login.css">
+    <script type="text/javascript" src="../javascript/login.js"></script>
+</head>
+<body>
+    <header class="header">
+        <button class="header-menu-link"><a href="#menu"><i class="fa fa-bars"></i></a></button>
+        <div class="header-tutorials-links">
+            <ul>
+                <li><a href="#tutorial">Tutorials</a></li>
+                <li> | </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="header-search-container">
+            <form class="header-search-form">
+                <input class="header-search" placeholder="Search">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+        </div> 
+        <div class="login-signup-buttons">
+            <button class="button header-login"><a href="employee-signup.html">SignUp</a></button>
+            <button class="button header-sign-up"><a href="index.html">Home</a></button>
+        </div>    
+    </header>
+    <main class="main">
+        <div class="login-title">
+            <img class="logo" src="https://cdn.worldvectorlogo.com/logos/tether.svg" alt="logo">
+            <div class="principal-titles">
+                <h1>TRACKGENIX</h1>
+                <h2>DATA MANAGEMENT</h2> 
+            </div>
+        </div>
+        <div class="login-form-container">
+            <h2>Log in</h2>
+            <form action = " " method="POST">
+                <p>Email:</p>
+                <input type="text" name="Email" placeholder="Write your Email" onblur="emailBlur()" onfocus="emailFocus()">
+                <p class="login-error-message login-email-error">The email has not a format valid.</p>
+                <p>Password:</p>
+                <input type="text" name="Password" placeholder="Write your Password" onblur="passwordBlur()" onfocus="passwordFocus()">
+                <p class="login-error-message login-password-error">The password has to contain numbers and letters.</p>
+            </form>
+            </div class="form-footer">
+                <form action=" " method="POST" class="form-footer">
+                    <div>
+                        <input type="checkbox" id="remember-me">
+                        <label> Remember me </label>
+                    </div>
+                    <button class="forgot-pw-button">Forgot your password?</button>
+                </form>  
+            <div>
+        </div>
+        <div class="login-green-button">
+            <button onclick="login()">Login</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="social-network">
+            <a href="https://www.linkedin.com/" class="social-network"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/" class="social-network"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" class="social-network"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/?hl=en" class="social-network"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://github.com/" class="social-network"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+        <div class="Copyright">
+            <p>Montevideo, Uruguay</p>
+            <p>Copyright 2022 Rdium Rocket. All right reserved.</p>
+        </div>   
+    </footer>
+</body>
