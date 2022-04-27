@@ -90,5 +90,6 @@ body {
 .login-form-container .login-error-message {
     visibility: hidden;
     color: red;
-    font-size: 15px;
+    font-size: 13px;
+    margin-top: 3px;
 }

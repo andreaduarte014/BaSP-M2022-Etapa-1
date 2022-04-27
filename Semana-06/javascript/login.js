@@ -1,3 +1,4 @@
+//function for login button with alerts
 function login () {
 if (emailBlur() && passwordBlur()){
 var email = document.getElementsByName("Email")[0].value;
@@ -14,6 +15,13 @@ message = message + document.getElementsByClassName("login-password-error")[0].t
 alert(message);
 }
 }
+// forgot password button alerts
+function forgotPasswordAlert() {
+    alert('A new password was sent to your email.');
+    window.location.reload();
+}
+forgotPassword.addEventListener('click', forgotPaswordAlert);
+//login email validation function
 function emailBlur () {
 var email = document.getElementsByName("Email")[0].value;
 if (email.match(/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/)) {
@@ -25,6 +33,7 @@ document.getElementsByClassName("login-email-error")[0].style.visibility = "visi
 function emailFocus () {
 document.getElementsByClassName("login-email-error")[0].style.visibility = "hidden";
 }
+//login password validation function
 function passwordBlur () {
 var hasLetters = false;
 var hasNumbers = false;
