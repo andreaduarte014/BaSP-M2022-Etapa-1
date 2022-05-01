@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRACKGENICS LANDING</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://cdn.worldvectorlogo.com/logos/tether.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Styles/reset.css">
+    <link rel="stylesheet" href="../Styles/header.css">
+    <link rel="stylesheet" href="../Styles/footer.css">
+    <link rel="stylesheet" href="../Styles/employee-signup.css">
+    <link rel="stylesheet" href="../Styles/login.css">
+    <script type="text/javascript" src="../javascript/employee-signup.js"></script>
+</head>
+<body>
+    <header class="header">
+        <button class="header-menu-link"><a href="#menu"><i class="fa fa-bars"></i></a></button>
+        <div class="header-tutorials-links">
+            <ul>
+                <li><a href="#tutorial">Tutorials</a></li>
+                <li> | </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="header-search-container">
+            <form class="header-search-form">
+                <input class="header-search" placeholder="Search">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+        </div> 
+        <div class="login-signup-buttons">
+            <button class="button header-login"><a href="login.html">Login</a></button>
+            <button class="button header-sign-up"><a href="index.html">Home</a></button>
+        </div>    
+    </header>
+    <main class="main">
+        <div class="login-title">
+            <img class="logo" src="https://cdn.worldvectorlogo.com/logos/tether.svg" alt="logo">
+            <div class="principal-titles">
+                <h1>TRACKGENIX</h1>
+                <h2>DATA MANAGEMENT</h2> 
+            </div>
+        </div>
+        <div class="signup-form-container">
+            <h2>Sign Up</h2>
+            <form action = " " method="POST">
+                <div class="left-column">
+                    <p>Name</p>
+                    <input type="text" name="name" placeholder="Write your name" onblur="nameBlur('name','signup-name-error')" onfocus="nameFocus('signup-name-error')">
+                    <p class="signup-error-message signup-name-error">The name has not a valid format.</p>
+                    <p>Surname</p>
+                    <input type="text" name="surname" placeholder="Write your surname" onblur="nameBlur('surname','signup-surname-error')" onfocus="nameFocus('signup-surname-error')">
+                    <p class="signup-error-message signup-surname-error">The Surname has not a valid format.</p>
+                    <p>DNI</p>
+                    <input type="text" name="dni" placeholder="DNI" onblur="dniBlur()" onfocus='dniFocus()'>
+                    <p class="signup-error-message signup-dni-error">The DNI has not a valid format.</p>
+                    <p>Date of birth</p>
+                    <input type="date" name="birth" placeholder="date of birth" onblur="dateBlur()" onfocus="dateFocus()">
+                    <p class="signup-error-message signup-date-error">The Date is not a valid date.</p>
+                    <p>Telephone number</p>
+                    <input type="text" name="telephone" placeholder="Write telephone number" onblur="telBlur()" onfocus="telFocus()">
+                    <p class="signup-error-message signup-telephone-error">The phone has not a valid format.</p>
+                    <p>Address</p>
+                    <input type="text" name="address" placeholder="Write your address" onblur="addressBlur()" onfocus="addressFocus()">
+                    <p class="signup-error-message signup-address-error">The address has not a valid format.</p>
+                </div>
+                <div class="right-column">
+                    <p>City</p>
+                    <input type="text" name="city" placeholder="write your city" onblur="cityBlur()" onfocus="cityFocus()">
+                    <p class="signup-error-message signup-city-error">The city is not a valid name.</p>
+                    <p>Postal code</p>
+                    <input type="text" name="postal code" placeholder="write your postal code" onblur="codeBlur()" onfocus="codeFocus()"> 
+                    <p class="signup-error-message signup-code-error">The Postal code has not a valid format.</p>
+                    <p>Email</p>
+                    <input type="text" name="Email" placeholder="Write your Email" onblur="emailBlur()" onfocus="emailFocus()">
+                    <p class="signup-error-message signup-email-error">The Email has not a valid format.</p>
+                    <p>Password</p>
+                    <input type="text" name="Password" placeholder="Write your Password" onblur="pwBlur()" onfocus="pwFocus()">
+                    <p class="signup-error-message signup-password-error">The Password has not a valid format.</p>
+                    <p>Confirm password</p>
+                    <input type="text" name="confirmation" placeholder="Write password again" onblur="confirmationBlur()" onfocus="confirmationFocus()">
+                    <p class="signup-error-message signup-confirmation-error">Password must be the same.</p>   
+                </div>
+            </form>
+            <div class="signup-green-button">
+                <button onclick="signup()">Sign up</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="social-network">
+            <a href="https://www.linkedin.com/" class="social-network"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/" class="social-network"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" class="social-network"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/?hl=en" class="social-network"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://github.com/" class="social-network"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+        <div class="Copyright">
+            <p>Montevideo, Uruguay</p>
+            <p>Copyright 2022 Rdium Rocket. All right reserved.</p>
+        </div>   
+    </footer>
+</body>
