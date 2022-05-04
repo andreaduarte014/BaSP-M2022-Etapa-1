@@ -245,11 +245,13 @@ function signup () {
         + '&password=' + password
         )
         .then(function(data){
-        return data.json()})
+            return data.json();
+        })
         .then(function(data){
-        alert(data.msg)})
+            alert('Employee created succesfully');   
+        })
         .catch(function(data){
-        alert(data.msg);
+            alert(error.msg);
         })
         alert('Name: ' + namee + '\n' + 'Surname: ' + surname + '\n' + 'DNI: ' + dni + '\n' + 'Date of birth: ' + date +'\n' + 'Telephone number: ' + telephone
         + '\n' + 'Adress: ' + address + '\n' + 'City: ' + city + '\n' + 'Postal code: ' + code + '\n' + 'Email: ' + email +'\n' + 'Password: ' + password);
